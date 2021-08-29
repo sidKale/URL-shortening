@@ -1,0 +1,462 @@
+@import "_variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+}
+
+.navbar {
+  nav {
+    width: 100%;
+    height: 200px;
+    margin: -3rem 0rem 0rem 7rem;
+
+    .navbar-nav {
+      .nav-item a {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 1rem 0rem 0rem 3rem;
+        color: $Neutral-grayishViolet;
+
+        &:hover {
+          color: black;
+        }
+      }
+      .btn {
+        margin: 1rem 0rem 0rem 15rem;
+        display: flex;
+
+        .btn--login {
+          margin-right: 3rem;
+          width: 100px;
+          height: 40px;
+          background: transparent;
+          border: none;
+          font-size: 18px;
+          font-weight: 500;
+          color: $Neutral-grayishViolet;
+
+          &:hover {
+            color: black;
+          }
+        }
+        .btn--signup {
+          width: 100px;
+          height: 40px;
+          background: $primary-cyan;
+          border: none;
+          border-radius: 20px;
+          font-size: 15px;
+          font-weight: 500;
+          color: snow;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
+
+.top-container {
+  width: 100%;
+  height: 600px;
+
+  .left--section {
+    float: left;
+    width: 450px;
+    margin: 3rem 0rem 0rem 10rem;
+
+    h1 {
+      font-size: 60px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 1rem;
+    }
+
+    button {
+      width: 120px;
+      height: 50px;
+      border: none;
+      border-radius: 30px;
+      background: $primary-cyan;
+      color: snow;
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 1.5rem;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .right--section {
+    float: right;
+    margin-top: -2rem;
+
+    img {
+      width: 640px;
+      height: 480px;
+    }
+  }
+}
+
+.url-shortner {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 999;
+  .form {
+    background-image: url("/src/images/bg-shorten-desktop.svg");
+    // width: 80%;
+    background-color: #2d2442;
+    height: 100px;
+    width: 80%;
+    margin-left: 10rem;
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      input {
+        width: 700px;
+        height: 60px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 1.2rem;
+        text-indent: 15px;
+      }
+      button {
+        width: 150px;
+        height: 60px;
+        margin: 1.3rem 0rem 0rem 2rem;
+        border-radius: 5px;
+        border: none;
+        background: $primary-cyan;
+        font-size: 18px;
+        font-weight: 500;
+        color: snow;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.mid-container {
+  width: 100%;
+  height: 900px;
+  background: #eff1f7;
+  margin-top: -3rem;
+
+  .statistics {
+    position: relative;
+    top: 35%;
+
+    .header {
+      h1 {
+        display: block;
+        text-align: center;
+        font-size: 38px;
+        font-weight: 700;
+      }
+      p {
+        display: block;
+        position: relative;
+        left: 34%;
+        text-align: center;
+        width: 420px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: rem;
+      .card--1,
+      .card--2,
+      .card--3 {
+        width: 320px;
+        height: 270px;
+        margin-right: 5rem;
+        background: snow;
+
+        h1 {
+          margin-top: 1.5rem;
+          font-size: 21px;
+          font-weight: 700;
+          margin-left: 2rem;
+        }
+        p {
+          font-size: 13px;
+          font-weight: 500;
+          margin-left: 2rem;
+          color: $Neutral-gray;
+        }
+        .image {
+          width: 70px;
+          height: 70px;
+          background: black;
+          border-radius: 50px;
+          position: relative;
+          left: 5%;
+          top: -15%;
+
+          img {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+      .card--2 {
+        margin-top: 5rem;
+      }
+      .card--3 {
+        margin-top: 10rem;
+      }
+    }
+  }
+}
+
+.bottom-container {
+  width: 100%;
+  .boost {
+    background-image: url("/src/images/bg-shorten-desktop.svg");
+    background-color: #2d2442;
+    width: 100%;
+    height: 200px;
+
+    h1 {
+      color: snow;
+      text-align: center;
+      font-size: 40px;
+      position: relative;
+      top: 15%;
+    }
+    button {
+      width: 150px;
+      height: 55px;
+      border: none;
+      background: $primary-cyan;
+      border-radius: 30px;
+      position: relative;
+      left: 44%;
+      top: 25%;
+      color: snow;
+      font-weight: 500;
+    }
+  }
+  .socials {
+    background: $Neutral-darkViolet;
+    width: 100%;
+    height: 200px;
+
+    .content {
+      height: 200px;
+      display: flex;
+
+      svg {
+        margin: 2.5rem 0rem 0rem 5rem;
+      }
+
+      .features,
+      .resources,
+      .company {
+        margin: 3rem;
+      }
+
+      h1 {
+        font-size: 18px;
+        font-weight: 700;
+        color: snow;
+      }
+
+      li {
+        color: $Neutral-gray;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.7rem;
+
+        &:hover {
+          color: $primary-cyan;
+        }
+      }
+      .social-icons {
+        ul {
+          margin: 3rem;
+        }
+        li {
+          display: inline;
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}
+
+// @media (min-width: 320px) and (max-width: 480px) {
+//   nav {
+//     width: 1000px;
+//     .container-fluid {
+//       width: 100%;
+//       height: 80px;
+//     }
+
+//     .navbar-toggler {
+//       background: yellow;
+//       float: right;
+//     }
+//   }
+// }
+@media only screen and (max-width: 320px) {
+  main {
+    width: 100%;
+    section.navbar {
+      width: 700px;
+      height: 100px;
+
+      .container-fluid {
+        width: 100%;
+        height: 90px;
+
+        .navbar-toggler {
+          background: url("/src/images/icons8-menu-24.png");
+          background-repeat: no-repeat;
+        }
+        .collapse {
+          li a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .btn {
+            margin-left: 12rem;
+          }
+        }
+      }
+    }
+    .top-container {
+      margin-top: 9rem;
+      width: 100%;
+      height: 1100px;
+      .left--section {
+        margin-left: 2rem;
+        position: relative;
+        top: 45%;
+        left: 35%;
+        text-align: center;
+      }
+      .right--section {
+        position: relative;
+        top: -25%;
+        left: 120%;
+      }
+    }
+    .url-shortner {
+      width: 500px;
+      display: block;
+      margin-top: 6rem;
+
+      .form {
+        display: block;
+        width: 700px;
+        height: 125px;
+        margin-left: 1rem;
+        input {
+          display: inline;
+          display: block;
+          width: 450px;
+          height: 80px;
+          margin-left: -1rem;
+        }
+        button {
+          display: block;
+        }
+      }
+    }
+    .mid-container {
+      width: 800px;
+      height: 1800px;
+      margin-top: -18rem;
+
+      .statistics {
+        .header {
+          h1 {
+            text-align: center;
+            margin-left: -1rem;
+          }
+          p {
+            text-align: center;
+            margin-left: -6rem;
+          }
+        }
+        .cards {
+          display: inline;
+
+          .card--1,
+          .card--2,
+          .card--3 {
+            margin: 5rem 0rem 2rem 13rem;
+
+            h1 {
+              font-size: 22px;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .bottom-container {
+      width: 800px;
+
+      h1 {
+        margin-left: -2rem;
+      }
+
+      button {
+        margin-left: -4rem;
+      }
+
+      .socials {
+        width: 800px;
+        height: 700px;
+        .content {
+          display: inline;
+          margin-left: 14rem;
+
+          .features,
+          .resources,
+          .company {
+            margin-left: 19rem;
+
+            h1 {
+              font-size: 25px;
+            }
+            li {
+              text-align: center;
+              margin-left: -23rem;
+              font-size: 16px;
+            }
+          }
+        }
+        .social-icons {
+          margin-left: 12rem;
+        }
+      }
+    }
+  }
+}
